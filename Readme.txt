@@ -1,6 +1,14 @@
-Thanks for downloading this template!
+this is basically a website for the kenya youth mentorship association that deals with exciting staff
 
-Template Name: MySchool
-Template URL: https://bootstrapmade.com/myschool-bootstrap-school-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+#it is made by 
+1.joshua
+2.danny
+3.tracy
+
+
+#to run kindly 
+----------open with  live server
+
+much of frontend don ~
+
+hope you are having a good time  with the application

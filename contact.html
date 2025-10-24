@@ -50,17 +50,37 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="about.html"><span>About us</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="admissions.html">Admissions</a></li>
-              <li><a href="academics.html">Academics</a></li>
-              <li><a href="faculty-staff.html">Faculty &amp; Staff</a></li>
-              <li><a href="campus-facilities.html">Campus &amp; Facilities</a></li>
+              <li><a href="about.html">who we are</a></li>
+              <li><a href="leadersip.html">leadership</a></li>
+              <li><a href="legacy.html">legacy</a></li>
             </ul>
+            <li><a href="gallery.html">gallery</a></li>
+          <li class="dropdown"><a href="resources.html"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li> <a href="opportunities.html">opportunities</a></li>
+            <li> <a href="blogs.html">blogs</a></li>
+            <li> <a href="vaccancies.html">vaccancies</a>
+          </li>
+          </ul>
           </li>
           </li>
           <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="events.html">Events</a></li>
+           <li class="dropdown"><a href="services.html"><span>services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="leadership and training .html">leadership and training</a></li>
+              <li><a href="innovation and technology.html">innovation and technology</a></li>
+              <li><a href="community service.html">community service</a></li>
+              <li><a href="monitoring.html">monitoring and evaluation department</a></li>
+              <li><a href="mentorship.html">mentorship,guidanc eand counselling department</a></li>
+              <li><a href="treasury.html">treasury</a></li>
+              <li><a href="ICT.html">ICT and media department</a></li>
+              <li><a href="faith.html">department of faith and moral guidance</a></li>
+              <li><a href="environment.html">department of environmental stewardship and sustainability</a></li>
+              <li><a href="mental_health.html">sdepartment of mental health and awareness</a></li>
+            </ul>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -187,7 +207,35 @@ Whether you have a question, want to join our programs, or wish to partner with 
                     <div class="sent-message">Your message has been sent. Thank you!</div>
                   </div>
                   <div class="text-center">
-                    <button type="submit">Submit Message</button>
+                    <button type="button" onclick="sendToWhatsApp()">Send via WhatsApp</button>
+
+<script>
+function sendToWhatsApp() {
+  // Get form values - adjust these IDs to match your form inputs
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  
+  // Validate that fields are filled
+  if (!name || !email || !message) {
+    alert('Please fill in all fields');
+    return;
+  }
+  
+  // Format the message
+  const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+  
+  // Your WhatsApp number (include country code without + or spaces)
+  // Example: for +1 234 567 8900, use 12345678900
+  const phoneNumber = '0753967606'; // Replace with your number
+  
+  // Create WhatsApp URL
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+  
+  // Open WhatsApp
+  window.open(whatsappURL, '_blank');
+}
+</script>
                   </div>
 
                 </div>
