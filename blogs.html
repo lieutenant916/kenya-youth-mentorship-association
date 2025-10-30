@@ -3,40 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="assets/css/main.css" rel="stylesheet">
     <title>KYMA Blog</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f9fa;
-        }
-
-        header {
-            background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            animation: slideDown 0.8s ease;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
-            animation: fadeIn 1s ease;
-        }
-
-        header p {
-            font-size: 1.2em;
-            color: #FFD700;
-            font-weight: 300;
-            animation: fadeIn 1.2s ease;
         }
 
         @keyframes slideDown {
@@ -281,62 +260,170 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>KYMA BLOG</h1>
-        <p>Inspiring Stories from Kenya Youth Mentorship Association</p>
-    </header>
+ <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/images/kyma logo.jpg" alt="KYMA Logo" style="height:80px; margin-right: 15px;">
+        <h1 class="sitename">Kenya Youth Mentorship Association(KYMA)</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown"><a href="about.html"><span>About us</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">who we are</a></li>
+              <li><a href="leadership.html">leadership </a></li>
+              <li><a href="legacy.html">legacy</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class="dropdown"><a href="resources.html"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li> <a href="opportunities.html">opportunities</a></li>
+              <li> <a href="blogs.html">blogs</a></li>
+              
+            </ul>
+
+          <li><a href="events.html">Events</a></li>
+          <li class="dropdown"><a href="services.html"><span>services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="services/leadership and training.html">leadership and training</a></li>
+              <li><a href="innovation and technology.html">innovation and technology</a></li>
+              <li><a href="community service.html">community service</a></li>
+              <li><a href="monitoring.html">monitoring and evaluation department</a></li>
+              <li><a href="mentorship.html">mentorship,guidance eand counselling department</a></li>
+              <li><a href="treasury.html">treasury</a></li>
+              <li><a href="ICT.html">ICT and media department</a></li>
+              <li><a href="faith.html">department of faith and moral guidance</a></li>
+              <li><a href="environment.html">department of environmental stewardship and sustainability</a></li>
+              <li><a href="mental_health.html">sdepartment of mental health and awareness</a></li>
+            </ul>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+    <!-- Add these to the head section -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  </header>
 
     <div class="container">
         <!-- Featured Post -->
         <div class="blog-post featured-post">
-            <img src="image1.jpg" alt="Leadership Training" class="blog-image">
+            <img src="assets/img/images/blogleadership.jpeg" alt="Leadership Training" class="blog-image">
             <div class="blog-content">
                 <span class="featured-badge">⭐ Featured Story</span>
                 <h2>Building Tomorrow's Leaders</h2>
                 <div class="blog-meta">
                     <span class="department-tag">Leadership & Training</span>
-                    <span class="blog-author"><strong>Peter Kamau</strong></span>
+                    <span class="blog-author"><strong>Danny ngatia</strong></span>
                     <span class="blog-date">October 20, 2025</span>
                 </div>
                 <p>Our recent leadership bootcamp brought together 150 young leaders from across Kenya. Participants learned essential leadership skills, team building, and strategic planning. The three-day intensive program focused on developing practical leadership competencies that young people can apply in their communities.</p>
                 <p>Through interactive workshops and mentorship sessions, attendees gained valuable insights into effective communication, decision-making, and ethical leadership.</p>
-                <a href="#" class="read-more">Read Full Story →</a>
+                <a href="services/leadership and training.html" class="read-more">Read Full Story →</a>
+                 <button class="print" onclick="window.print()">Print this page</button>
+                <style>
+                    .print{
+                        background-color: #001f3f;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        margin-top: 15px;
+                    }
+                    .print:hover{
+                        background-color: #FFD700;
+                        color: #001f3f;
+                        transform: translateX(5px);
+                    }
+                    </style>
             </div>
         </div>
 
         <!-- Regular Posts -->
         <div class="blog-post">
-            <img src="image2.jpg" alt="Community Service" class="blog-image">
+            <img src="assets/img/images/blogcommunity.jpeg" alt="Community Service" class="blog-image">
             <div class="blog-content">
                 <h2>Community Clean-Up Drive Success</h2>
                 <div class="blog-meta">
                     <span class="department-tag">Community Service</span>
-                    <span class="blog-author"><strong>Grace Wanjiru</strong></span>
+                    <span class="blog-author"><strong>Lynn kipchirchir</strong></span>
                     <span class="blog-date">October 18, 2025</span>
                 </div>
                 <p>Last Saturday marked a historic day as 500 KYMA volunteers came together for our largest community clean-up initiative. We collected over 2 tons of waste from public spaces across Nairobi, demonstrating the power of youth unity in environmental conservation.</p>
                 <p>The event brought together young people from different backgrounds, all united by a common goal of creating cleaner, healthier communities. Local residents expressed their gratitude and many have requested similar initiatives in their neighborhoods.</p>
-                <a href="#" class="read-more">Read Full Story →</a>
+                <a href="services/community service.html" class="read-more">Read Full Story →</a>
+                 <button class="print" onclick="window.print()">Print this page</button>
+                <style>
+                    .print{
+                        background-color: #001f3f;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        margin-top: 15px;
+                    }
+                    .print:hover{
+                        background-color: #FFD700;
+                        color: #001f3f;
+                        transform: translateX(5px);
+                    }
+                    </style>
             </div>
         </div>
 
         <div class="blog-post">
-            <img src="image3.jpg" alt="Tech Hub" class="blog-image">
+            <img src="assets/img/images/blogtech.jpeg" alt="Tech Hub" class="blog-image">
             <div class="blog-content">
                 <h2>Tech Innovation Hub Launch</h2>
                 <div class="blog-meta">
                     <span class="department-tag">Innovation & Technology</span>
-                    <span class="blog-author"><strong>James Omondi</strong></span>
+                    <span class="blog-author"><strong>joshua munene</strong></span>
                     <span class="blog-date">October 15, 2025</span>
                 </div>
                 <p>The KYMA Tech Hub has officially launched, offering free coding workshops and digital literacy training to underserved communities. Our first cohort of 50 students is already learning web development, programming basics, and digital skills that will prepare them for the modern job market.</p>
                 <p>This initiative aims to bridge the digital divide and empower young Kenyans with technology skills. We provide computers, internet access, and experienced instructors to ensure quality learning experiences.</p>
-                <a href="#" class="read-more">Read Full Story →</a>
+                <a href="services/innovation and technology.html" class="read-more">Read Full Story →</a>
+                 <button class="print" onclick="window.print()">Print this page</button>
+                <style>
+                    .print{
+                        background-color: #001f3f;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        margin-top: 15px;
+                    }
+                    .print:hover{
+                        background-color: #FFD700;
+                        color: #001f3f;
+                        transform: translateX(5px);
+                    }
+                    </style>
             </div>
         </div>
 
         <div class="blog-post">
-            <img src="image4.jpg" alt="Mental Health" class="blog-image">
+            <img src="assets/img/images/blogmental.jpeg" alt="Mental Health" class="blog-image">
             <div class="blog-content">
                 <h2>Mental Health Awareness Campaign Reaches 10,000 Youth</h2>
                 <div class="blog-meta">
@@ -346,7 +433,26 @@
                 </div>
                 <p>Our mental health campaign has touched lives across 15 counties. Through workshops, counseling sessions, and peer support groups, we're creating safe spaces for young people to discuss mental health challenges without stigma.</p>
                 <p>The response has been overwhelming, with thousands of youth opening up about their struggles and finding support. We've partnered with professional counselors to provide quality care and resources to those in need.</p>
-                <a href="#" class="read-more">Read Full Story →</a>
+                <a href="services/mental_health.html" class="read-more">Read Full Story →</a>
+                 <button class="print" onclick="window.print()">Print this page</button>
+                <style>
+                    .print{
+                        background-color: #001f3f;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        margin-top: 15px;
+                    }
+                    .print:hover{
+                        background-color: #FFD700;
+                        color: #001f3f;
+                        transform: translateX(5px);
+                    }
+                    </style>
             </div>
         </div>
 
@@ -356,12 +462,36 @@
                 <h2>One-on-One Mentorship Success Stories</h2>
                 <div class="blog-meta">
                     <span class="department-tag">Mentorship & Counselling</span>
-                    <span class="blog-author"><strong>Sarah Chemutai</strong></span>
+                    <span class="blog-author"><strong>pravyne juma</strong></span>
                     <span class="blog-date">October 1, 2025</span>
                 </div>
                 <p>Meet Jane, a young woman whose life was transformed through our mentorship program. From facing numerous challenges to now pursuing her university education, Jane's story represents the power of guidance and support.</p>
                 <p>Our mentorship program pairs experienced professionals with young people seeking direction. Through regular meetings and goal-setting sessions, mentors help mentees navigate academic, career, and personal challenges.</p>
-                <a href="#" class="read-more">Read Full Story →</a>
+                <a href="services/mentorship.html" class="read-more">Read Full Story →</a>
+                <button class="print" onclick="window.print()">Print this page</button>
+                <style>
+                    .print{
+                        background-color: #001f3f;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        margin-top: 15px;
+                    }
+                    .print:hover{
+                        background-color: #FFD700;
+                        color: #001f3f;
+                        transform: translateX(5px);
+                    }
+                    </style>
+                <script>
+                    function myprint(){
+                        window.print();
+                    }
+                </script>
             </div>
         </div>
 
@@ -376,9 +506,105 @@
                 </div>
                 <p>Climate action starts with us! Our environmental team led the planting of 10,000 tree seedlings across degraded areas in Nakuru County. This initiative is part of our commitment to environmental conservation and combating climate change.</p>
                 <p>Youth volunteers worked alongside local communities to identify suitable planting sites and ensure proper care for the seedlings. We'll continue monitoring the trees' growth and organizing regular maintenance activities.</p>
-                <a href="#" class="read-more">Read Full Story →</a>
+                <a href="services/environment.html" class="read-more">Read Full Story →</a>
+                 <button class="print" onclick="window.print()">Print this page</button>
+                <style>
+                    .print{
+                        background-color: #001f3f;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        margin-top: 15px;
+                    }
+                    .print:hover{
+                        background-color: #FFD700;
+                        color: #001f3f;
+                        transform: translateX(5px);
+                    }
+                    </style>
             </div>
         </div>
     </div>
+
+    <footer id="footer" class="footer-16 footer position-relative dark-background">
+        <div class="container">
+        <div class="footer-main">
+            <div class="row align-items-start">
+
+            <div class="col-lg-5">
+                <div class="brand-section">
+                <a href="../index.html" class="logo d-flex align-items-center mb-4">
+                    <span class="sitename">Kenya Youth Mentorship Association</span>
+                </a>
+                <p class="brand-description">Building a disciplined generation that is self-driven, successful, and heaven-bound.</p>
+
+                <div class="contact-info mt-5">
+                    <div class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>USA 1080E 450N ST -84606UT<br>Nairobi, Kenya Riverside Drive - 00100</span>
+                    </div>
+                    <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <span>+18013195465</span>
+                    </div>
+                    <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <span>info@kyma.or.ke</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="footer-nav-wrapper">
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                    <div class="nav-column">
+                        <h6>Quick Links</h6>
+                        <nav class="footer-nav">
+                        <a href="../about.html">About Us</a>
+                        <a href="../contact.html">Contact</a>
+                        <a href="../gallery.html">Gallery</a>
+                        <a href="../events.html">Events</a>
+                        <a href="../services.html">Departments</a>
+                        </nav>
+                    </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                    <div class="nav-column">
+                        <h6>Resources</h6>
+                        <nav class="footer-nav">
+                        <a href="../blogs.html">Blog</a>
+                        <a href="../opportunities.html">Opportunities</a>
+                        <a href="../vaccancies.html">Vacancies</a>
+                        </nav>
+                    </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                    <div class="nav-column">
+                        <h6>Connect</h6>
+                        <nav class="footer-nav">
+                        <a href="#">Join Newsletter</a>
+                        <a href="#">Follow Updates</a>
+                        <a href="#">Partnerships</a>
+                        </nav>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-4 text-center">
+            <p>© 2025 Kenya Youth Mentorship Association (KYMA). All rights reserved. <br> Designed by Dan, Tracy, and Josh.</p>
+        </div>
+        </div>
+    </footer>
 </body>
 </html>
