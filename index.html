@@ -37,15 +37,16 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+    <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/images/kyma logo.jpg" alt="KYMA Logo" style="height:80px; margin-right: 15px;">
-        <i class="bi bi-buildings"></i>
+        
         <h1 class="sitename">Kenya Youth Mentorship Association(KYMA)</h1>
       </a>
+
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -81,6 +82,111 @@
               <li><a href="environment.html">department of environmental stewardship and sustainability</a></li>
               <li><a href="mental_health.html">sdepartment of mental health and awareness</a></li>
             </ul>
+
+            <li><button id="join" class="animated-button">JOIN</button></li>
+             <style>
+              .animated-button {
+            position: relative;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFD700;
+            background: linear-gradient(135deg, #00008B 0%, #000080 100%);
+            border: 2px solid #FFD700;
+            border-radius: 50px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .animated-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            transition: left 0.5s ease;
+            z-index: -1;
+        }
+
+        .animated-button:hover::before {
+            left: 0;
+        }
+
+        .animated-button:hover {
+            color: #00008B;
+            border-color: #FFA500;
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
+            transform: translateY(-3px);
+        }
+
+        .animated-button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 215, 0, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .animated-button:hover::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        .animated-button:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .button-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Shine effect */
+        @keyframes shine {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        .animated-button .shine {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.3), 
+                transparent);
+            transform: skewX(-25deg);
+        }
+
+        .animated-button:hover .shine {
+            animation: shine 0.8s ease;
+        }
+              </style> 
+          
+              
+            <script>
+              document.getElementById("join").addEventListener("click", function() {
+                window.location.href = "https://docs.google.com/forms/d/1WlrAHx0I_-2AdAt8orp5Z69-RJbGmBafKj1tDpRmeJI/viewform";
+              });
+            </script>
           
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -100,8 +206,14 @@
           <p>Empowering the next generation of leaders, innovators, and changemakers.
 At KYMA, we believe in the power of mentorship to transform lives and build a brighter future for Kenya’s youth. Through guidance, training, and community engagement, we help young people unlock their potential, discover their purpose, and create lasting impact in their communities.
 </p>
+
           <div class="cta-buttons">
-            <a href="#" class="btn-apply">Apply Now</a>
+            <a id="app"  href="#" class="btn-apply">Apply Now</a>
+            <script>
+              document.getElementById("app").addEventListener("click", function() {
+                window.location.href = "https://docs.google.com/forms/d/1WlrAHx0I_-2AdAt8orp5Z69-RJbGmBafKj1tDpRmeJI/viewform";
+              });
+            </script>
             <a href="#" class="btn-tour">Campus Tour</a>
           </div>
           <div class="announcement">
@@ -165,7 +277,12 @@ visionary leaders who positively shape their communities and the nation.</p>
               <p>Experience our vibrant campus life, meet faculty members, and learn about our academic programs.</p>
             </div>
             <div class="col-md-2">
-              <a href="#" class="btn-register">Register</a>
+              <a id="reg" href="#" class="btn-register">Register</a>
+              <script>
+                document.getElementById("reg").addEventListener("click", function() {
+                  window.location.href = "https://docs.google.com/forms/d/1WlrAHx0I_-2AdAt8orp5Z69-RJbGmBafKj1tDpRmeJI/viewform";
+                });
+              </script>
             </div>
           </div>
         </div>
@@ -725,14 +842,14 @@ KYMA empowers you to become a visionary leader — grounded in discipline, innov
           <div class="col-lg-6">
             <div class="event-card">
               <div class="event-date">
-                <span class="month">FEB</span>
+                <span class="month">JAN</span>
                 <span class="day">15</span>
                 <span class="year">2025</span>
               </div>
               <div class="event-content">
                 <div class="event-tag academic">Academic</div>
                 <h3>Science Fair Exhibition</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Participants conduct experiments, build models, and investigate hypotheses on diverse topics, from renewable energy and robotics to biology and chemistry.</p>
                 <div class="event-meta">
                   <div class="meta-item">
                     <i class="bi bi-clock"></i>
@@ -744,7 +861,49 @@ KYMA empowers you to become a visionary leader — grounded in discipline, innov
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a href="#" class="btn-learn-more">Learn More</a>
+                  <a href="events.html" class="btn-learn-more">Learn More</a>
+                  <script type="text/javascript">
+                    function openEventPage() {
+                      window.location.href = "events.html";
+                    }
+                    </script>
+                  <a id="cal" href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
+        
+                
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="event-card">
+              <div class="event-date">
+                <span class="month">FEB</span>
+                <span class="day">10</span>
+                <span class="year">2025</span>
+              </div>
+              <div class="event-content">
+                <div class="event-tag sports">Sports</div>
+                <h3>Annual Sports Day</h3>
+                <p> Dedicated to celebrating athleticism and teamwork. It is a day filled with energy, excitement, and friendly competition.</p>
+                <div class="event-meta">
+                  <div class="meta-item">
+                    <i class="bi bi-clock"></i>
+                    <span>08:30 AM - 05:00 PM</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Ulinzi Sports Club</span>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a href="events.html" class="btn-learn-more">Learn More</a>
+                  <script type="text/javascript">
+                    function openEventPage() {
+                      window.location.href = "events.html";
+                    }
+                    </script>
                   <a href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
                 </div>
               </div>
@@ -755,25 +914,30 @@ KYMA empowers you to become a visionary leader — grounded in discipline, innov
             <div class="event-card">
               <div class="event-date">
                 <span class="month">MAR</span>
-                <span class="day">10</span>
+                <span class="day">22</span>
                 <span class="year">2025</span>
               </div>
               <div class="event-content">
-                <div class="event-tag sports">Sports</div>
-                <h3>Annual Sports Day</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                <div class="event-tag arts">Arts</div>
+                <h3>Music Concert</h3>
+                <p>A fusion event where code generates live music, blending programming logic with artistic creativity for a unique technological symphony.</p>
                 <div class="event-meta">
                   <div class="meta-item">
                     <i class="bi bi-clock"></i>
-                    <span>08:30 AM - 05:00 PM</span>
+                    <span>05:30 PM - 08:30 PM</span>
                   </div>
                   <div class="meta-item">
                     <i class="bi bi-geo-alt"></i>
-                    <span>School Playground</span>
+                    <span>Multimedia University Conference Hall</span>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a href="#" class="btn-learn-more">Learn More</a>
+                  <a href="events.html" class="btn-learn-more">Learn More</a>
+                  <script type="text/javascript">
+                    function openEventPage() {
+                      window.location.href = "events.html";
+                    }
+                    </script>
                   <a href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
                 </div>
               </div>
@@ -784,42 +948,13 @@ KYMA empowers you to become a visionary leader — grounded in discipline, innov
             <div class="event-card">
               <div class="event-date">
                 <span class="month">APR</span>
-                <span class="day">22</span>
-                <span class="year">2025</span>
-              </div>
-              <div class="event-content">
-                <div class="event-tag arts">Arts</div>
-                <h3>Spring Music Concert</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
-                <div class="event-meta">
-                  <div class="meta-item">
-                    <i class="bi bi-clock"></i>
-                    <span>06:30 PM - 08:30 PM</span>
-                  </div>
-                  <div class="meta-item">
-                    <i class="bi bi-geo-alt"></i>
-                    <span>Performing Arts Center</span>
-                  </div>
-                </div>
-                <div class="event-actions">
-                  <a href="#" class="btn-learn-more">Learn More</a>
-                  <a href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="event-card">
-              <div class="event-date">
-                <span class="month">MAY</span>
                 <span class="day">8</span>
                 <span class="year">2025</span>
               </div>
               <div class="event-content">
                 <div class="event-tag community">Community</div>
-                <h3>Parent-Teacher Conference</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+                <h3>Charity program</h3>
+                <P>Developers collaborate, share knowledge, and build projects together, fostering innovation and collective growth of the community.</p>
                 <div class="event-meta">
                   <div class="meta-item">
                     <i class="bi bi-clock"></i>
@@ -827,11 +962,16 @@ KYMA empowers you to become a visionary leader — grounded in discipline, innov
                   </div>
                   <div class="meta-item">
                     <i class="bi bi-geo-alt"></i>
-                    <span>Various Classrooms</span>
+                    <span>Uhuru Park</span>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a href="#" class="btn-learn-more">Learn More</a>
+                  <a href="events.html" class="btn-learn-more">Learn More</a>
+                  <script type="text/javascript">
+                    function openEventPage() {
+                      window.location.href = "events.html";
+                    }
+                  </script>
                   <a href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
                 </div>
               </div>
