@@ -123,3 +123,34 @@
   });
 
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const h1 = document.querySelector(".hero-content h1");
+  const p = document.querySelector(".hero-content p");
+
+  if (!h1 || !p) return; // safety check
+
+  const options = {
+    root: null, // viewport
+    threshold: 0.3, // trigger when 30% visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target === h1) {
+          h1.classList.add("slide-right");
+        } else if (entry.target === p) {
+          p.classList.add("slide-left");
+        }
+        observer.unobserve(entry.target); // trigger only once
+      }
+    });
+  }, options);
+
+  observer.observe(h1);
+  observer.observe(p);
+});
+
+
+
