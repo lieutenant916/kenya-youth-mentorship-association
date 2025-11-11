@@ -187,6 +187,113 @@
             </script>
           
         </ul>
+        <li><button id="donate" class="animated-button">DONATE</button></li>
+           <style>
+              .animated-button {
+            position: relative;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #e4c915;
+            background: linear-gradient(135deg, #00008B 0%, #000080 100%);
+            border: 2px solid #FFD700;
+            border-radius: 50px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .animated-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            transition: left 0.5s ease;
+            z-index: -1;
+        }
+
+        .animated-button:hover::before {
+            left: 0;
+        }
+
+        .animated-button:hover {
+            color: #00008B;
+            border-color: #FFA500;
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
+            transform: translateY(-3px);
+        }
+
+        .animated-button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 215, 0, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .animated-button:hover::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        .animated-button:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .button-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Shine effect */
+        @keyframes shine {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        .animated-button .shine {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.3), 
+                transparent);
+            transform: skewX(-25deg);
+        }
+
+        .animated-button:hover .shine {
+            animation: shine 0.8s ease;
+        }
+              </style>
+
+        
+         
+        
+    <script>
+                  document.getElementById("donate").onclick = function () {
+                    location.href = "payment.html";
+                  };
+                  </script>
+    
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -1114,7 +1221,7 @@ If you’re interested in learning more, visit our Services..</p>
                     <nav class="footer-nav">
                       <a href="../blogs.html">Blog</a>
                       <a href="../opportunities.html">Opportunities</a>
-                      <a href="../vaccancies.html">Vacancies</a>
+                    
                     </nav>
                   </div>
                 </div>
@@ -1122,9 +1229,9 @@ If you’re interested in learning more, visit our Services..</p>
                   <div class="nav-column">
                     <h6>Connect</h6>
                     <nav class="footer-nav">
-                      <a href="#">Join Newsletter</a>
-                      <a href="#">Follow Updates</a>
-                      <a href="#">Partnerships</a>
+                      <a href="blogs.html">Join Newsletter</a>
+                      <a href="events.html">Follow Updates</a>
+                      <a href="payment.html">Partnerships</a>
                     </nav>
                   </div>
                 </div>

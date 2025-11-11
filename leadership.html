@@ -3,11 +3,999 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>leadership</title>
+    <title>KYMA Leadership Team</title>
+     <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/images/kyma logo.jpg" alt="KYMA Logo" style="height:80px; margin-right: 15px;">
+        
+        <h1 class="sitename">Kenya Youth Mentorship Association(KYMA)</h1>
+      </a>
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown"><a href="about.html"><span>About us</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">who we are</a></li>
+              <li><a href="leadership.html">leadership </a></li>
+              <li><a href="legacy.html">legacy</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class="dropdown"><a href="resources.html"><span>Resources</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li> <a href="opportunities.html">opportunities</a></li>
+              <li> <a href="blogs.html">blogs</a></li>
+
+            </ul>
+
+          <li><a href="events.html">Events</a></li>
+          <li class="dropdown"><a href="services.html"><span>services</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="services/leadership and training.html">leadership and training</a></li>
+              <li><a href="services/innovation and technology.html">innovation and technology</a></li>
+              <li><a href="services/community service.html">community service</a></li>
+              <li><a href="services/monitoring.html">monitoring and evaluation department</a></li>
+              <li><a href="services/mentorship.html">mentorship,guidance eand counselling department</a></li>
+              <li><a href="services/treasury.html">treasury</a></li>
+              <li><a href="services/ICT.html">ICT and media department</a></li>
+              <li><a href="services/faith.html">department of faith and moral guidance</a></li>
+              <li><a href="services/environment.html">department of environmental stewardship and sustainability</a></li>
+              <li><a href="services/mental_health.html">department of mental health and awareness</a></li>
+            </ul>
+
+            <li><button id="join" class="animated-button">JOIN</button></li>
+             <style>
+              .animated-button {
+            position: relative;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFD700;
+            background: linear-gradient(135deg, #00008B 0%, #000080 100%);
+            border: 2px solid #FFD700;
+            border-radius: 50px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .animated-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            transition: left 0.5s ease;
+            z-index: -1;
+        }
+
+        .animated-button:hover::before {
+            left: 0;
+        }
+
+        .animated-button:hover {
+            color: #00008B;
+            border-color: #FFA500;
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
+            transform: translateY(-3px);
+        }
+
+        .animated-button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 215, 0, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .animated-button:hover::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        .animated-button:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .button-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Shine effect */
+        @keyframes shine {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        .animated-button .shine {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.3), 
+                transparent);
+            transform: skewX(-25deg);
+        }
+
+        .animated-button:hover .shine {
+            animation: shine 0.8s ease;
+        }
+              </style> 
+          
+              
+            <script>
+              document.getElementById("join").addEventListener("click", function() {
+                window.location.href = "https://docs.google.com/forms/d/1WlrAHx0I_-2AdAt8orp5Z69-RJbGmBafKj1tDpRmeJI/viewform";
+              });
+            </script>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+    <main>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2942 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            }
+            50% {
+                box-shadow: 0 5px 30px rgba(74, 222, 128, 0.6);
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #0d2847 0%, #1a3a5c 100%);
+            border-radius: 20px;
+            margin-bottom: 50px;
+            border: 2px solid #d4af37;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+            animation: fadeInDown 1s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #d4af37;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #4ade80;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+
+        .org-info {
+            text-align: center;
+            font-size: 0.9em;
+            color: #cbd5e0;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .leader-card {
+            background: linear-gradient(145deg, #1a3a5c 0%, #0d2847 100%);
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #d4af37;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out backwards;
+        }
+
+        .leader-card:nth-child(1) { animation-delay: 0.1s; }
+        .leader-card:nth-child(2) { animation-delay: 0.2s; }
+        .leader-card:nth-child(3) { animation-delay: 0.3s; }
+        .leader-card:nth-child(4) { animation-delay: 0.4s; }
+        .leader-card:nth-child(5) { animation-delay: 0.5s; }
+        .leader-card:nth-child(6) { animation-delay: 0.6s; }
+        .leader-card:nth-child(7) { animation-delay: 0.7s; }
+        .leader-card:nth-child(8) { animation-delay: 0.8s; }
+
+        .leader-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #d4af37 0%, #4ade80 100%);
+        }
+
+        .leader-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent,
+                rgba(212, 175, 55, 0.1),
+                transparent
+            );
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+        }
+
+        .leader-card:hover::after {
+            animation: shimmer 1.5s ease-in-out;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.4);
+            border-color: #4ade80;
+        }
+
+        .leader-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #d4af37 0%, #4ade80 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: #0a1628;
+            font-weight: bold;
+            border: 4px solid #0d2847;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .leader-card:hover .leader-photo {
+            animation: pulse 1s ease-in-out infinite, glow 2s ease-in-out infinite;
+        }
+
+        .leader-name {
+            font-size: 1.5em;
+            color: #d4af37;
+            margin-bottom: 8px;
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        .leader-role {
+            color: #4ade80;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .leader-description {
+            color: #cbd5e0;
+            font-size: 0.95em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: justify;
+            padding: 20px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 10px;
+            border-left: 4px solid #4ade80;
+            position: relative;
+            z-index: 1;
+        }
+
+        .responsibilities {
+            background: rgba(74, 222, 128, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            border-left: 4px solid #d4af37;
+        }
+
+        .responsibilities-title {
+            color: #d4af37;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .responsibilities ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .responsibilities li {
+            color: #cbd5e0;
+            font-size: 0.85em;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .responsibilities li::before {
+            content: '✓';
+            color: #4ade80;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .leader-contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #a0aec0;
+            font-size: 0.95em;
+            padding: 12px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .leader-card:hover .leader-contact {
+            background: rgba(74, 222, 128, 0.1);
+            transform: scale(1.05);
+        }
+
+        .contact-icon {
+            color: #d4af37;
+            font-size: 1.2em;
+        }
+
+        .section-title {
+            font-size: 2.2em;
+            color: #d4af37;
+            text-align: center;
+            margin: 60px 0 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #4ade80;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeInDown 0.8s ease-out;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: #d4af37;
+        }
+
+        .executive-section {
+            margin-bottom: 80px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: #0a1628;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #718096;
+            font-size: 0.85em;
+            margin-top: 60px;
+            padding: 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .copyright strong {
+            color: #d4af37;
+        }
+    </style>
 </head>
 <body>
-    <h1>leadership</h1>
+    <div class="container">
+        <header>
+            <h1>KENYA YOUTH MENTORSHIP ASSOCIATION</h1>
+            <p class="subtitle">Official Leadership Structure</p>
+            <p class="org-info">Building Tomorrow's Leaders Today | God-Fearing | Servant Leadership | Excellence</p>
+        </header>
+
+        <!-- Executive Leadership -->
+        <div class="executive-section">
+            <h2 class="section-title">Executive Leadership</h2>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-photo">HB</div>
+                    <h3 class="leader-name">Humphrey Andanyi Blessings</h3>
+                    <p class="leader-role">Founder & President/CEO</p>
+                    <p class="leader-description">Visionary leader with exceptional strategic thinking and organizational development expertise. Spearheads KYMA's mission to empower youth through mentorship, leadership development, and moral guidance. Demonstrates unwavering commitment to youth transformation and possesses the rare ability to inspire and mobilize communities across Kenya.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Key Leadership Areas</div>
+                        <ul>
+                            <li>Strategic oversight of all KYMA operations and programs</li>
+                            <li>Building partnerships with institutions and stakeholders</li>
+                            <li>Championing youth empowerment and character development</li>
+                            <li>Ensuring alignment with KYMA's god-fearing vision</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+18013195465</span>
+                    </div>
+                    <center><span class="badge">FOUNDER</span></center>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">TK</div>
+                    <h3 class="leader-name">Tony Blair Kenedy</h3>
+                    <p class="leader-role">Vice President</p>
+                    <p class="leader-description">Dynamic administrator with strong collaborative and diplomatic expertise. Excels in supporting executive functions, building strategic partnerships, and maintaining organizational cohesion. His ability to balance multiple priorities while supporting the president's vision makes him an invaluable second-in-command.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Key Leadership Areas</div>
+                        <ul>
+                            <li>Supporting presidential functions and strategic initiatives</li>
+                            <li>Coordinating inter-departmental collaboration</li>
+                            <li>Representing KYMA in official engagements</li>
+                            <li>Ensuring operational continuity and excellence</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254796642850</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">YO</div>
+                    <h3 class="leader-name">Yvonne Otieno</h3>
+                    <p class="leader-role">PS - President</p>
+                    <p class="leader-description">Highly organized professional with exceptional attention to detail and communication skills. Expert in managing presidential affairs, coordinating executive activities, and ensuring seamless operations. Her proactive approach and ability to anticipate needs keep the presidency running efficiently.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254799238353</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">FY</div>
+                    <h3 class="leader-name">Faith Yator</h3>
+                    <p class="leader-role">PS - President</p>
+                    <p class="leader-description">Dedicated administrative expert with strong multitasking abilities and excellent interpersonal skills. Proficient in executive support, event coordination, and stakeholder management. Her reliability and problem-solving capabilities ensure smooth execution of presidential initiatives.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254746534092</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secretariat -->
+        <div class="executive-section">
+            <h2 class="section-title">Secretariat</h2>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-photo">MA</div>
+                    <h3 class="leader-name">Mandere Abednego</h3>
+                    <p class="leader-role">Secretary General</p>
+                    <p class="leader-description">Meticulous administrator with outstanding organizational and record-keeping skills. Demonstrates excellence in documentation, communication coordination, and governance oversight. His systematic approach and commitment to transparency ensure institutional integrity and efficient information flow across all KYMA levels.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254769162548</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">BC</div>
+                    <h3 class="leader-name">Brian Cheruiyot</h3>
+                    <p class="leader-role">Vice Secretary General</p>
+                    <p class="leader-description">Detail-oriented professional with strong analytical and documentation skills. Supports secretariat operations with precision and dedication. His ability to manage complex information systems and maintain accurate records strengthens organizational accountability and communication.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254716514818</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">GK</div>
+                    <h3 class="leader-name">Grace Kathure</h3>
+                    <p class="leader-role">Vice Secretary General</p>
+                    <p class="leader-description">Efficient coordinator with excellent communication and administrative capabilities. Skilled in managing correspondence, organizing meetings, and maintaining official records. Her thoroughness and diplomatic approach facilitate smooth internal operations.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+25419852237</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">SO</div>
+                    <h3 class="leader-name">Sammy Odhiambo</h3>
+                    <p class="leader-role">Vice Secretary General</p>
+                    <p class="leader-description">Reliable administrator with strong organizational skills and attention to protocol. Excels in supporting secretariat functions and ensuring compliance with organizational policies. His methodical approach enhances operational efficiency.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254759681956</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">AB</div>
+                    <h3 class="leader-name">Asole Bundara</h3>
+                    <p class="leader-role">Organizing Secretary</p>
+                    <p class="leader-description">Strategic planner with exceptional event management and mobilization skills. Expert in coordinating activities, managing logistics, and rallying members for organizational initiatives. His energetic approach and people skills drive successful programs and events across counties.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254700115193</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">GO</div>
+                    <h3 class="leader-name">Givens Onyango</h3>
+                    <p class="leader-role">Vice Organizing Secretary</p>
+                    <p class="leader-description">Dynamic organizer with strong logistical coordination and member engagement abilities. Supports organizational activities with creativity and enthusiasm. His networking skills and hands-on approach ensure successful event execution.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254716217645</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Treasury -->
+        <div class="executive-section">
+            <h2 class="section-title">Treasury</h2>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-photo">SS</div>
+                    <h3 class="leader-name">Seby Sanaipei</h3>
+                    <p class="leader-role">National Treasurer</p>
+                    <p class="leader-description">Financial expert with strong accounting and resource management skills. Demonstrates exceptional integrity, transparency, and fiscal responsibility. His strategic financial planning and budget oversight ensure organizational sustainability and proper stewardship of KYMA's resources.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Core Responsibilities</div>
+                        <ul>
+                            <li>Manage KYMA's financial resources with full accountability</li>
+                            <li>Develop and oversee the association's annual budget</li>
+                            <li>Maintain accurate financial records and statements</li>
+                            <li>Ensure timely financial reporting to presidency</li>
+                            <li>Mobilize funds through partnerships and fundraising</li>
+                            <li>Supervise financial transactions across all KYMA levels</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254704169792</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">IW</div>
+                    <h3 class="leader-name">Isaac Wekesa</h3>
+                    <p class="leader-role">Vice Treasurer</p>
+                    <p class="leader-description">Diligent financial administrator with solid understanding of accounting principles and financial controls. Supports treasury operations with accuracy and reliability. His analytical skills and attention to detail strengthen financial management systems and ensure compliance.</p>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254798890765</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Department Directors -->
+        <div class="executive-section">
+            <h2 class="section-title">Department Directors</h2>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-photo">GN</div>
+                    <h3 class="leader-name">Grace Nkirote</h3>
+                    <p class="leader-role">Director, Environmental Stewardship & Sustainability</p>
+                    <p class="leader-description">Passionate environmental advocate with expertise in sustainability education and conservation programs. Dedicated to empowering youth as environmental stewards and promoting eco-friendly initiatives. Her innovative approach drives impactful climate action and green innovation among members.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Department Mandate</div>
+                        <ul>
+                            <li>Promote environmental education and awareness</li>
+                            <li>Coordinate tree planting and clean-up campaigns</li>
+                            <li>Advocate for sustainable practices in communities</li>
+                            <li>Train youth in green innovation and eco-initiatives</li>
+                            <li>Lead environmental celebrations and campaigns</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254111379171</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">DN</div>
+                    <h3 class="leader-name">Danny Ngatia</h3>
+                    <p class="leader-role">Director, Leadership & Training</p>
+                    <p class="leader-description">Experienced leadership development specialist with strong mentoring and capacity-building capabilities. Focuses on cultivating servant leadership qualities and ethical conduct among members. His practical approach to talent development and training excellence creates lasting impact.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Department Mandate</div>
+                        <ul>
+                            <li>Organize leadership and personal development training</li>
+                            <li>Develop leadership curricula aligned with KYMA's vision</li>
+                            <li>Identify and nurture emerging young leaders</li>
+                            <li>Facilitate workshops and capacity-building forums</li>
+                            <li>Promote servant leadership and excellence</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254750714191</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">VK</div>
+                    <h3 class="leader-name">Vicent Kamya</h3>
+                    <p class="leader-role">Director, Monitoring & Evaluation</p>
+                    <p class="leader-description">Data-driven professional with expertise in impact assessment, performance tracking, and accountability systems. Skilled in developing evaluation tools and ensuring transparency across all KYMA initiatives. His analytical rigor enables evidence-based decision making and continuous improvement.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Department Mandate</div>
+                        <ul>
+                            <li>Track and assess performance of all KYMA programs</li>
+                            <li>Develop tools for data collection and impact measurement</li>
+                            <li>Prepare quarterly and annual performance reports</li>
+                            <li>Identify areas for improvement in operations</li>
+                            <li>Ensure transparency and accountability</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+19599298610</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">KO</div>
+                    <h3 class="leader-name">Kepha Odhiambo</h3>
+                    <p class="leader-role">Director, Mental Health & Awareness</p>
+                    <p class="leader-description">Compassionate mental health advocate with counseling and wellness program expertise. Committed to promoting holistic wellbeing and creating safe spaces for youth. His empathetic approach and awareness initiatives support member mental health and emotional resilience.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Department Mandate</div>
+                        <ul>
+                            <li>Conduct awareness campaigns on mental health issues</li>
+                            <li>Offer psychological support and referral services</li>
+                            <li>Train peer counselors on mental wellness</li>
+                            <li>Collaborate with professionals for mental health forums</li>
+                            <li>Promote healthy coping mechanisms among youth</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254740244032</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">JC</div>
+                    <h3 class="leader-name">Joseph Chlein</h3>
+                    <p class="leader-role">Director, Mentorship, Guidance & Counseling</p>
+                    <p class="leader-description">Dedicated mentorship expert with strong counseling and youth development skills. Excels in developing mentorship frameworks and training mentors under KYMA standards. His passion for moral integrity and responsible living transforms young lives across schools and communities.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Department Mandate</div>
+                        <ul>
+                            <li>Develop mentorship frameworks for institutions</li>
+                            <li>Train mentors and counselors under KYMA standards</li>
+                            <li>Offer counseling for academic and personal challenges</li>
+                            <li>Promote moral integrity and responsible living</li>
+                            <li>Design mentorship materials and handbooks</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254719595258</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">LN</div>
+                    <h3 class="leader-name">Lewis Ngugu</h3>
+                    <p class="leader-role">Director, ICT & Media</p>
+                    <p class="leader-description">Tech-savvy innovator with expertise in digital platforms, media production, and IT infrastructure. Drives digital transformation and enhances KYMA's online presence through strategic branding and content creation. His technical knowledge keeps the association at the forefront of digital engagement.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities-title">Department Mandate</div>
+                        <ul>
+                            <li>Manage KYMA's digital platforms and online presence</li>
+                            <li>Oversee branding, communications, and social media</li>
+                            <li>Develop and maintain official website and database</li>
+                            <li>Design digital content and event coverage</li>
+                            <li>Ensure cybersecurity and data protection</li>
+                        </ul>
+                    </div>
+                    <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254114971070</span>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo">JM</div>
+                    <h3 class="leader-name">Joshua Munene</h3>
+                    <p class="leader-role">Director, Innovation & Technology</p>
+                    <p class="leader-description">Innovation champion with strong project management and technological expertise. Focuses on promoting creativity, technological innovation, and entrepreneurship among youth. His forward-thinking approach and support for tech projects drive operational excellence and youth-led innovation.</p>
+                    <div class="responsibilities">
+                        <div class="responsibilities">
+                        <div class="responsibilities-title">Department Mandate</div>
+                        <ul>
+                            <li>Develop mentorship frameworks for institutions</li>
+                            <li>Train mentors and counselors under KYMA standards</li>
+                            <li>Offer counseling for academic and personal challenges</li>
+                            <li>Promote moral integrity and responsible living</li>
+                            <li>Design mentorship materials and handbooks</li>
+                        </ul>
+                         <div class="leader-contact">
+                        <span class="contact-icon">📱</span>
+                        <span>+254742631455</span>
+                    </div>
+                    </div>
     
+</main>
+    <footer id="footer" class="footer-16 footer position-relative dark-background">
+    <div class="container">
+      <div class="footer-main">
+        <div class="row align-items-start">
+
+          <div class="col-lg-5">
+            <div class="brand-section">
+              <a href="../index.html" class="logo d-flex align-items-center mb-4">
+                <span class="sitename">Kenya Youth Mentorship Association</span>
+              </a>
+              <p class="brand-description">Building a disciplined generation that is self-driven, successful, and
+                heaven-bound.</p>
+
+              <div class="contact-info mt-5">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>USA 1080E 450N ST -84606UT<br>Nairobi, Kenya Riverside Drive - 00100</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+18013195465</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>info@kyma.or.ke</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="footer-nav-wrapper">
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Quick Links</h6>
+                    <nav class="footer-nav">
+                      <a href="../about.html">About Us</a>
+                      <a href="../contact.html">Contact</a>
+                      <a href="../gallery.html">Gallery</a>
+                      <a href="../events.html">Events</a>
+                      <a href="../services.html">Departments</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Resources</h6>
+                    <nav class="footer-nav">
+                      <a href="../blogs.html">Blog</a>
+                      <a href="../opportunities.html">Opportunities</a>
+                    
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Connect</h6>
+                    <nav class="footer-nav">
+                      <a href="blogs.html">Join Newsletter</a>
+                      <a href="events.html">Follow Updates</a>
+                      <a href="payment.html">Partnerships</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4 text-center">
+        <p>© 2025 Kenya Youth Mentorship Association (KYMA). All rights reserved. <br> Designed by Dan, Tracy, and Josh.
+        </p>
+      </div>
+    </div>
+  </footer>
     
 </body>
 </html>

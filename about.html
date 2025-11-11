@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - MySchool Bootstrap Template</title>
+  <title>about kyma</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -45,7 +45,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <i class="bi bi-buildings"></i>
+         <img src="assets/img/images/kyma logo.jpg" alt="KYMA Logo" style="height:80px; margin-right: 15px;">
         <h1 class="sitename">Kenya Youth Mentorship Association</h1>
       </a>
 
@@ -69,7 +69,7 @@
             <ul>
               <li> <a href="opportunities.html">opportunities</a></li>
               <li> <a href="blogs.html">blogs</a></li>
-              <li> <a href="vaccancies.html">vaccancies</a></li>
+              
             </ul>
           </li>
           <li><a href="events.html">Events</a></li>
@@ -95,389 +95,493 @@
 
     </div>
   </header>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <main class="main">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2942 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1 class="heading-title">About</h1>
-              <p class="mb-0">
-                Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
-                odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
-                debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat
-                ipsum dolorem.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
+        /* Header Placeholder */
+        .header-placeholder {
+            background: linear-gradient(to right, #0d1b2a, #1b263b);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 3px solid #d4af37;
+        }
 
-    <!-- History Section -->
-    <section id="history" class="history section">
+        .header-placeholder h1 {
+            color: #d4af37;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
 
-      <div class="container">
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(10, 22, 40, 0.3));
+            animation: fadeIn 1s ease-in;
+        }
 
-        <div class="hero-content text-center mb-5">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <span class="section-badge">Excellence in Education</span>
-              <h1 class="hero-title">Shaping Tomorrow's Innovators Through Progressive Learning</h1>
-              <p class="hero-description">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ac diam sit
-                amet quam vehicula elementum sed sit amet dui.</p>
-            </div>
-          </div>
-        </div>
+        .hero h1 {
+            font-size: 3em;
+            color: #d4af37;
+            margin-bottom: 20px;
+            animation: slideDown 1s ease-out;
+        }
 
-        <div class="leadership-showcase mb-5">
-          <div class="row g-4">
-            <div class="col-lg-6">
-              <div class="leadership-content">
-                <h2 class="section-heading">Visionary Leadership</h2>
-                <p class="section-text">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum
-                  congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget
-                  felis porttitor volutpat.</p>
+        .hero .tagline {
+            font-size: 1.3em;
+            color: #e0e0e0;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: slideUp 1s ease-out;
+        }
 
-                <div class="leader-profile">
-                  <div class="profile-image">
-                    <img src="assets/img/person/person-f-8.webp" alt="Director" class="img-fluid">
-                  </div>
-                  <div class="profile-info">
-                    <h4>Dr. Sarah Chen</h4>
-                    <span class="title">Academic Director</span>
-                    <p class="bio">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                      curae; Donec velit neque, auctor sit amet aliquam vel.</p>
-                  </div>
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 60px;
+            animation: fadeInUp 0.8s ease-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.2s; }
+        .section:nth-child(2) { animation-delay: 0.4s; }
+        .section:nth-child(3) { animation-delay: 0.6s; }
+        .section:nth-child(4) { animation-delay: 0.8s; }
+        .section:nth-child(5) { animation-delay: 1s; }
+
+        .section h2 {
+            color: #d4af37;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-left: 5px solid #d4af37;
+            padding-left: 15px;
+            animation: slideRight 0.8s ease-out;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            margin-bottom: 15px;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #1a2942, #0d1b2a);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.4s ease;
+            animation: scaleIn 0.6s ease-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #d4af37;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .card h3 {
+            color: #d4af37;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .card p, .card ul {
+            color: #c0c0c0;
+            font-size: 1em;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .card ul li:before {
+            content: "▸ ";
+            color: #d4af37;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .value-item {
+            background: linear-gradient(135deg, #d4af37, #b8941f);
+            color: #0d1b2a;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+            animation: bounceIn 0.8s ease-out;
+        }
+
+        .value-item:hover {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        /* Location Section */
+        .location-info-centered {
+            background: linear-gradient(145deg, #1a2942, #0d1b2a);
+            padding: 50px;
+            border-radius: 15px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            text-align: center;
+            max-width: 600px;
+            margin: 30px auto;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .location-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        .location-info-centered h3 {
+            color: #d4af37;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .location-info-centered p {
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Programs List */
+        .programs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .program-item {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #d4af37;
+            transition: all 0.3s ease;
+        }
+
+        .program-item:hover {
+            background: rgba(212, 175, 55, 0.2);
+            padding-left: 30px;
+        }
+
+        .program-item h4 {
+            color: #d4af37;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .program-item p {
+            font-size: 0.95em;
+        }
+
+        /* Footer Placeholder */
+        .footer-placeholder {
+            background: linear-gradient(to right, #0d1b2a, #1b263b);
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 3px solid #d4af37;
+            margin-top: 60px;
+        }
+
+        .footer-placeholder h1 {
+            color: #d4af37;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .section h2 {
+                font-size: 1.8em;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .location-info-centered {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>About KYMA</h1>
+        <p class="tagline">Kenya Youth Mentorship Alliance - Inspiring and empowering Kenyan youth to become confident, ethical, and visionary leaders</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Vision & Mission -->
+        <div class="section">
+            <h2>Our Vision & Mission</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Vision</h3>
+                    <p>To inspire and empower Kenyan youth and students to become confident, ethical, and visionary leaders who positively shape their communities and the nation.</p>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="faculty-grid">
-                <div class="faculty-member">
-                  <img src="assets/img/person/person-m-12.webp" alt="Faculty" class="img-fluid">
-                  <div class="member-info">
-                    <h5>Prof. Michael Torres</h5>
-                    <span>Dean of Sciences</span>
-                  </div>
+                <div class="card">
+                    <h3>Mission</h3>
+                    <p>KYMA exists to provide mentorship, guidance, and opportunities for youth and students to grow in character, leadership, innovation, and career readiness through structured programs, partnerships, and community engagement.</p>
                 </div>
-                <div class="faculty-member">
-                  <img src="assets/img/person/person-f-11.webp" alt="Faculty" class="img-fluid">
-                  <div class="member-info">
-                    <h5>Dr. Elena Rodriguez</h5>
-                    <span>Research Coordinator</span>
-                  </div>
-                </div>
-                <div class="faculty-member">
-                  <img src="assets/img/person/person-m-9.webp" alt="Faculty" class="img-fluid">
-                  <div class="member-info">
-                    <h5>Dr. James Wilson</h5>
-                    <span>Innovation Director</span>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="values-section mb-5">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="values-header text-center mb-4">
-                <span class="section-badge">Our Foundation</span>
-                <h2 class="section-heading">Core Values &amp; Principles</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="row g-0">
-            <div class="col-lg-4">
-              <div class="value-block">
-                <div class="value-number">01</div>
-                <h3>Innovation</h3>
-                <p>Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris
-                  blandit aliquet elit, eget tincidunt nibh pulvinar.</p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="value-block">
-                <div class="value-number">02</div>
-                <h3>Integrity</h3>
-                <p>Vestibulum ac diam sit amet quam vehicula elementum. Pellentesque habitant morbi tristique senectus
-                  et netus et malesuada fames ac turpis egestas.</p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="value-block">
-                <div class="value-number">03</div>
-                <h3>Excellence</h3>
-                <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
-                  magna dictum porta. Sed porttitor lectus nibh.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="accomplishments-section">
-          <div class="row align-items-center">
-            <div class="col-lg-5">
-              <div class="campus-visual">
-                <img src="assets/img/education/campus-5.webp" alt="Campus Facilities" class="main-image img-fluid">
-                <div class="floating-stats">
-                  <div class="stat-card">
-                    <span class="stat-number">25+</span>
-                    <span class="stat-label">Years Excellence</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-7">
-              <div class="accomplishments-content">
-                <span class="section-badge">Our Impact</span>
-                <h2 class="section-heading">Measurable Excellence in Education</h2>
-                <p class="section-text">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget
-                  consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                </p>
-
-                <div class="achievements-grid">
-                  <div class="achievement-item">
-                    <span class="achievement-number">15,000+</span>
-                    <span class="achievement-desc">Successful Graduates</span>
-                  </div>
-                  <div class="achievement-item">
-                    <span class="achievement-number">98%</span>
-                    <span class="achievement-desc">Employment Rate</span>
-                  </div>
-                  <div class="achievement-item">
-                    <span class="achievement-number">45</span>
-                    <span class="achievement-desc">International Partners</span>
-                  </div>
-                  <div class="achievement-item">
-                    <span class="achievement-number">300+</span>
-                    <span class="achievement-desc">Expert Faculty</span>
-                  </div>
-                </div>
-
-                <div class="credentials">
-                  <div class="credential-item">
-                    <i class="bi bi-patch-check"></i>
-                    <span>Nationally Accredited Institution</span>
-                  </div>
-                  <div class="credential-item">
-                    <i class="bi bi-award"></i>
-                    <span>Excellence in Teaching Award 2024</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /History Section -->
-
-    <!-- Leadership Section -->
-    <section id="leadership" class="leadership section">
-
-      <div class="container">
-
-        <div class="intro-section">
-          <div class="content-wrapper">
-            <span class="intro-label">Leadership Excellence</span>
-            <h2 class="intro-title">Visionary Leaders Shaping Tomorrow's Education</h2>
-            <p class="intro-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-              turpis egestas. Vestibulum tortor quam, feugiat vitae ultricies eget, tempor sit amet ante. Donec eu
-              libero sit amet quam egestas semper.</p>
-          </div>
-        </div>
-
-        <div class="leadership-grid">
-          <div class="featured-leader">
-            <div class="leader-image-large">
-              <img src="assets/img/education/teacher-3.webp" alt="Principal" class="img-fluid">
-            </div>
-            <div class="leader-details">
-              <h3>Dr. Margaret Thompson</h3>
-              <span class="leader-title">Principal &amp; Educational Director</span>
-              <p class="leader-bio">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Mauris viverra veniam sit amet lacus cursus venenatis. Etiam consectetur aliquam lorem quis
-                viverra.</p>
-              <div class="leader-stats">
-                <div class="stat-item">
-                  <span class="stat-number">15</span>
-                  <span class="stat-label">Years Leading</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">250+</span>
-                  <span class="stat-label">Graduates</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">PhD</span>
-                  <span class="stat-label">Education</span>
-                </div>
-              </div>
-              <div class="social-connect">
-                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
-                <a href="#" class="social-link"><i class="bi bi-globe"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="leadership-team-grid">
-            <div class="team-member">
-              <div class="member-photo">
-                <img src="assets/img/person/person-m-4.webp" alt="Vice Principal" class="img-fluid">
-                <div class="member-overlay">
-                  <div class="member-social">
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>James Wilson</h4>
-                <span class="member-role">Vice Principal</span>
-                <p class="member-description">Nunc dignissim risus id metus molestie tempor. Cras vestibulum bibendum
-                  augue praesent mattis.</p>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-photo">
-                <img src="assets/img/person/person-f-6.webp" alt="Academic Coordinator" class="img-fluid">
-                <div class="member-overlay">
-                  <div class="member-social">
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Elena Rodriguez</h4>
-                <span class="member-role">Academic Coordinator</span>
-                <p class="member-description">Praesent sapien massa convallis a pellentesque nec egestas non nisi cras
-                  adipiscing.</p>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-photo">
-                <img src="assets/img/person/person-m-9.webp" alt="Student Affairs" class="img-fluid">
-                <div class="member-overlay">
-                  <div class="member-social">
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Michael Chen</h4>
-                <span class="member-role">Student Affairs Director</span>
-                <p class="member-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                  doloremque.</p>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-photo">
-                <img src="assets/img/person/person-f-11.webp" alt="Curriculum Head" class="img-fluid">
-                <div class="member-overlay">
-                  <div class="member-social">
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Mitchell</h4>
-                <span class="member-role">Curriculum Head</span>
-                <p class="member-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium.</p>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-photo">
-                <img src="assets/img/person/person-m-13.webp" alt="Operations Manager" class="img-fluid">
-                <div class="member-overlay">
-                  <div class="member-social">
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>David Kumar</h4>
-                <span class="member-role">Operations Manager</span>
-                <p class="member-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
-                  tempor incididunt.</p>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-photo">
-                <img src="assets/img/images/tap water.jpg.jpeg" alt="Admissions Director" class="img-fluid">
-                <div class="member-overlay">
-                  <div class="member-social">
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Lisa Anderson</h4>
-                <span class="member-role">Admissions Director</span>
-                <p class="member-description">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis
-                  suscipit laboriosam.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="leadership-philosophy">
-          <div class="philosophy-content">
-            <h3>Our Leadership Philosophy</h3>
-            <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus
-              orci luctus et ultrices posuere cubilia curae. Donec rutrum congue leo eget malesuada. Nulla porttitor
-              accumsan tincidunt.</p>
-            <div class="philosophy-points">
-              <div class="point">
-                <i class="bi bi-lightbulb"></i>
-                <span>Innovation-driven educational approach</span>
-              </div>
-              <div class="point">
-                <i class="bi bi-people"></i>
-                <span>Student-centered leadership practices</span>
-              </div>
-              <div class="point">
-                <i class="bi bi-graph-up"></i>
-                <span>Continuous improvement mindset</span>
-              </div>
-            </div>
-          </div>
         </div>
 
-      </div>
+        <!-- Core Values -->
+        <div class="section">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-item">Integrity</div>
+                <div class="value-item">Service</div>
+                <div class="value-item">Discipline</div>
+                <div class="value-item">Innovation</div>
+                <div class="value-item">Inclusivity</div>
+                <div class="value-item">Excellence</div>
+            </div>
+        </div>
 
-    </section><!-- /Leadership Section -->
+        <!-- Objectives -->
+        <div class="section">
+            <h2>Our Objectives</h2>
+            <div class="card">
+                <ul>
+                    <li>Empower Kenyan youth with mentorship and leadership skills</li>
+                    <li>Build strong partnerships with schools, universities, and industries</li>
+                    <li>Promote values, character development, and national identity</li>
+                    <li>Support youth in entrepreneurship, innovation, and career readiness</li>
+                    <li>Foster community service, spiritual growth, and social responsibility</li>
+                </ul>
+            </div>
+        </div>
 
-  </main>
+        <!-- Programs -->
+        <div class="section">
+            <h2>Our Programs</h2>
+            <div class="programs-list">
+                <div class="program-item">
+                    <h4>Mentorship & Guidance</h4>
+                    <p>Peer-to-peer and professional mentorship programs to guide youth in their personal and professional development.</p>
+                </div>
+                <div class="program-item">
+                    <h4>Leadership Development</h4>
+                    <p>Training, bootcamps, and forums designed to cultivate the next generation of student leaders.</p>
+                </div>
+                <div class="program-item">
+                    <h4>Academic & Career Empowerment</h4>
+                    <p>Career guidance, internship opportunities, and scholarship support to help youth achieve their academic goals.</p>
+                </div>
+                <div class="program-item">
+                    <h4>Entrepreneurship & Innovation</h4>
+                    <p>Startup support, financial literacy programs, and innovation hubs to foster entrepreneurial mindsets.</p>
+                </div>
+                <div class="program-item">
+                    <h4>Life Skills & Wellness</h4>
+                    <p>Communication training, digital literacy, and mental health support for holistic youth development.</p>
+                </div>
+                <div class="program-item">
+                    <h4>Community Service</h4>
+                    <p>Environmental conservation initiatives, charity work, and volunteerism opportunities.</p>
+                </div>
+                <div class="program-item">
+                    <h4>Talent Development</h4>
+                    <p>Competitions, arts programs, sports activities, and STEM promotion to nurture diverse talents.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Organization Structure -->
+        <div class="section">
+            <h2>Our Structure</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>National Level</h3>
+                    <p>Led by the National Executive Council (NEC) with a President/CEO, Deputy President, Secretary General, National Treasurer, and Program Directors overseeing various initiatives.</p>
+                </div>
+                <div class="card">
+                    <h3>County Level</h3>
+                    <p>County Directors and Executive Committees coordinate programs and activities at the county level across Kenya.</p>
+                </div>
+                <div class="card">
+                    <h3>Institutional Level</h3>
+                    <p>KYMA Clubs established in schools and universities, led by student leaders with guidance from faculty patrons.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Membership -->
+        <div class="section">
+            <h2>Membership Categories</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Student Members</h3>
+                    <p>Pupils, high school, college, and university students actively engaged in KYMA programs and activities.</p>
+                </div>
+                <div class="card">
+                    <h3>Youth Members</h3>
+                    <p>Out-of-school youth aged 18-35 years committed to personal growth and community impact.</p>
+                </div>
+                <div class="card">
+                    <h3>Institutional Members</h3>
+                    <p>Schools, universities, or organizations formally registered with KYMA to support youth development.</p>
+                </div>
+                <div class="card">
+                    <h3>Honorary Members</h3>
+                    <p>Individuals recognized for their outstanding contribution to mentorship and youth empowerment.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location -->
+        <div class="section">
+            <h2>Our Location</h2>
+            <div class="location-info-centered">
+                <div class="location-icon">📍</div>
+                <h3>Headquarters</h3>
+                <p><strong>Nairobi Central Business District</strong></p>
+                <p>Nairobi, Kenya</p>
+                <p style="margin-top: 20px; color: #d4af37;">With branches established at the county, institutional, and school levels across Kenya</p>
+            </div>
+        </div>
+    </div>
+
+  </div>
 
   <footer id="footer" class="footer-16 footer position-relative dark-background">
     <div class="container">
@@ -537,9 +641,9 @@
                   <div class="nav-column">
                     <h6>Connect</h6>
                     <nav class="footer-nav">
-                      <a href="#">Join Newsletter</a>
-                      <a href="#">Follow Updates</a>
-                      <a href="#">Partnerships</a>
+                      <a href="blogs.html">Join Newsletter</a>
+                      <a href="events.html">Follow Updates</a>
+                      <a href="payment.html">Partnerships</a>
                     </nav>
                   </div>
                 </div>
