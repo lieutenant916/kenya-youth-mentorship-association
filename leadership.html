@@ -168,7 +168,9 @@
         .animated-button:hover .shine {
             animation: shine 0.8s ease;
         }
-              </style> 
+
+
+            </style> 
           
               
             <script>
@@ -527,6 +529,41 @@
             width: 100px;
             height: 3px;
             background: #d4af37;
+        }
+
+        
+        .navbar {
+            z-index: 1000;
+        }
+
+/* Make dropdown menus appear above cards */
+        .nav-item.dropdown {
+            position: static; /* or relative */
+        }
+
+        .dropdown-menu {
+            z-index: 1050 !important;
+            position: absolute !important;
+        }
+
+/* If your cards have z-index, ensure dropdowns are higher */
+        .card {
+            z-index: 1;
+            overflow: visible !important;
+        }
+
+/* Alternative: If dropdowns are inside cards, add this to the card container */
+        .card:has(.dropdown) {
+            overflow: visible !important;
+       }
+
+/* Or apply to specific sections */
+        .section-with-dropdowns {
+            overflow: visible !important;
+       }
+
+        .dropdown-menu.show {
+            z-index: 1050 !important;
         }
 
         .executive-section {

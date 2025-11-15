@@ -15,10 +15,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #001f3f ; /* Background color for the entire website, including individual sections */
+  --background-color: #070707 ; /* Background color for the entire website, including individual sections */
   --default-color: #f7f7f7; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ece92b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color:#a697fa ; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #f7f3f2; /* Color for headings, subheadings and title throughout the website */
+  --accent-color:#575099 ; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #3a3600; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #f8f8fa; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -36,14 +36,14 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #0d0369;
-  --surface-color: #5c5ee2;
+  --background-color: #fcfcfd;
+  --surface-color: #090127;
 }
 
 .dark-background {
   --background-color: #060606;
-  --default-color: #edf885;
-  --heading-color: #ffffff;
+  --default-color: #f5f2eaec;
+  --heading-color: #c9a506;
   --surface-color: #252525;
   --contrast-color: #8e83ec;
 }
@@ -1408,7 +1408,7 @@ section,
 }
 
 .featured-programs .featured-program {
-  background: var(--surface-color);
+  background: var(--background-color);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 12px 40px color-mix(in srgb, var(--heading-color), transparent 92%);
@@ -1442,7 +1442,7 @@ section,
   position: absolute;
   top: 16px;
   left: 16px;
-  background: var(--surface-color);
+  background: var(--background-color);
   color: var(--accent-color);
   padding: 6px 12px;
   border-radius: 20px;
@@ -1546,14 +1546,14 @@ section,
 }
 
 .featured-programs .program-item {
-  background: var(--surface-color);
+  background: var(--background-color);
   border-radius: 12px;
   padding: 24px;
   display: flex;
   align-items: center;
   gap: 20px;
   transition: all 0.4s ease;
-  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 95%);
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 95%);
   cursor: pointer;
 }
 
