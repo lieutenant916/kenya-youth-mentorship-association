@@ -203,13 +203,117 @@ Whether you have a question, want to join our programs, or wish to partner with 
                       <textarea class="form-control" name="message" rows="6" placeholder="Write a message*" required=""></textarea>
                     </div>
                   </div>
-                  <button type="submit">
-                  <a href="https://www.linkedin.com/company/kenya-youth-mentorship-association" aria-label="LinkedIn" class="social-link">
                   
-                  <span>submit</span>
-                  </button>
                 </a>
                   </div>
+                  <button type="submit" class="whatsapp-btn mt-4" id="whatsappBtn">
+                    <i class="bi bi-whatsapp"></i> submit via WhatsApp
+<style>
+    .whatsapp-btn {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #d4af37 100%);
+        border: none;
+        color: white;
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    }
+
+    .whatsapp-btn:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.5s;
+    }
+
+    .whatsapp-btn:hover:before {
+        left: 100%;
+    }
+
+    .whatsapp-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+    }
+
+    .whatsapp-btn:active {
+        transform: translateY(-1px);
+    }
+
+    .whatsapp-btn i {
+        margin-right: 10px;
+        font-size: 22px;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+    }
+
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+        20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+
+    .shake {
+        animation: shake 0.5s;
+    }
+</style>
+</button>
+<script>
+    document.getElementById('whatsappBtn').addEventListener('click', function() {
+        // Get form values by name attribute
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const phone = document.querySelector('input[name="phone"]').value;
+        const subject = document.querySelector('select[name="subject"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
+
+        // Validate form
+        if (!name || !email || !phone || !subject || !message) {
+            alert('Please fill in all required fields!');
+            this.classList.add('shake');
+            setTimeout(() => {
+                this.classList.remove('shake');
+            }, 500);
+            return;
+        }
+
+        // Format message for WhatsApp
+        const whatsappMessage = `*Submitting contacting details*%0A%0A` +
+                              `*Name:* ${encodeURIComponent(name)}%0A` +
+                              `*Email:* ${encodeURIComponent(email)}%0A` +
+                              `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                              `*Service:* ${encodeURIComponent(subject)}%0A%0A` +
+                              `*Message:*%0A${encodeURIComponent(message)}`;
+
+        // Replace with your WhatsApp number (include country code without + or 00)
+        // Example: For +254712345678, use 254712345678
+        const whatsappNumber = '+18013195465'; // Replace with your actual number
+
+        // Create WhatsApp URL
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+        // Open WhatsApp
+        window.open(whatsappURL, '_blank');
+        document.querySelector('form.php-email-form').reset();
+    });
+</script>
+
 
                 </div>
               </form>
@@ -300,7 +404,7 @@ Whether you have a question, want to join our programs, or wish to partner with 
                   <i class="bi bi-linkedin"></i>
                   <span>LinkedIn</span>
                 </a>
-                <a href="#" aria-label="whatsapp" class="social-link">
+                <a href="https://chat.whatsapp.com/E4q1Sij0ZOcGZ6aZOPJjH8" aria-label="whatsapp" class="social-link">
                     <i class="bi bi-whatsapp"></i>
                     <span>whatsapp</span>
                 </a>

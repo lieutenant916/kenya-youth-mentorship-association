@@ -19,6 +19,15 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
+
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -28,7 +37,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  	<!-- Facebook Meta Tags -->
+  <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://www.kyma.or.ke/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kenya Youth Mentorship Association">
@@ -218,6 +227,142 @@
     <section id="hero" class="hero section">
 
       <div class="hero-container">
+        <!-- Image Carousel/Slider -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/homepic/pic1.jpeg" class="d-block w-100" alt="Youth Mentorship">
+      <div class="carousel-overlay"></div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/homepic/pic2.jpeg" class="d-block w-100" alt="Leadership Training">
+      <div class="carousel-overlay"></div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/homepic/pic3.jpeg" class="d-block w-100" alt="Community Impact">
+      <div class="carousel-overlay"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Hero Carousel Styles */
+  .hero.section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #heroCarousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .hero-container,
+  .highlights-container,
+  .event-banner {
+    position: relative;
+    z-index: 2;
+  }
+
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  .carousel-fade .carousel-item.active {
+    opacity: 1;
+  }
+</style>
+// ...existing code...
+<style>
+  /* Carousel slides as backgrounds */
+  #heroCarousel .carousel-item {
+    min-height: 75vh; /* or 100vh for full-screen */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+  }
+
+  /* Optional dark overlay for readability */
+  #heroCarousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  /* Center and style caption content */
+  #heroCarousel .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 2rem;
+  }
+
+  .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero-content h1,
+  .hero-content h2,
+  .hero-content p {
+    z-index: 3;
+    position: relative;
+  }
+
+  @media (max-width: 768px) {
+    #heroCarousel .carousel-item { min-height: 55vh; }
+    .hero-content { text-align: center; }
+  }
+</style>
+// ...existing code...
+<script>
+  // Initialize and auto-play the carousel
+  document.addEventListener('DOMContentLoaded', function() {
+    var heroCarousel = document.getElementById('heroCarousel');
+    if (heroCarousel) {
+      var carousel = new bootstrap.Carousel(heroCarousel, {
+        interval: 5000,  // 5 seconds
+        wrap: true,      // Loop continuously
+        pause: false,    // Don't pause on hover
+        ride: 'carousel' // Auto-start
+      });
+    }
+  });
+
+</script>
         <div class="hero-content">
           <h1>Kenya Youth Mentorship Association</h1>
           <p>Empowering the next generation of leaders, innovators, and changemakers.
@@ -354,6 +499,16 @@ At KYMA, we believe in the power of mentorship to transform lives and build a br
           <div class="col-md-4">
             <div class="highlight-item">
               <div class="icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h3>vision</h3>
+              <p>To inspire and empower Kenyan youth and students to become confident, ethical, and
+                visionary leaders who positively shape their communities and the nation.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="highlight-item">
+              <div class="icon">
                 <i class="bi bi-mortarboard-fill"></i>
               </div>
               <h3>mission</h3>
@@ -362,16 +517,7 @@ At KYMA, we believe in the power of mentorship to transform lives and build a br
                 structured programs, partnerships, and community engagement.</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="highlight-item">
-              <div class="icon">
-                <i class="bi bi-people-fill"></i>
-              </div>
-              <h3>vision</h3>
-              <p>To inspire and empower Kenyan youth and students to become confident, ethical, and
-                visionary leaders who positively shape their communities and the nation.</p>
-            </div>
-          </div>
+          
           <div class="col-md-4">
             <div class="highlight-item">
               <div class="icon">
@@ -413,6 +559,7 @@ At KYMA, we believe in the power of mentorship to transform lives and build a br
           </div>
         </div>
       </div>
+      
 
     </section><!-- /Hero Section -->
 
@@ -1069,7 +1216,7 @@ If you’re interested in learning more, visit our Services..</p>
                       window.location.href = "events.html";
                     }
                     </script>
-                  <a id="cal" href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
+                  <a id="cal" href="https://calendar.google.com/" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
         
                 
                     
@@ -1106,7 +1253,7 @@ If you’re interested in learning more, visit our Services..</p>
                       window.location.href = "events.html";
                     }
                     </script>
-                  <a href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
+                  <a href="https://calendar.google.com/" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
                 </div>
               </div>
             </div>
@@ -1140,7 +1287,7 @@ If you’re interested in learning more, visit our Services..</p>
                       window.location.href = "events.html";
                     }
                     </script>
-                  <a href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
+                  <a href="https://calendar.google.com/" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
                 </div>
               </div>
             </div>
@@ -1174,7 +1321,7 @@ If you’re interested in learning more, visit our Services..</p>
                       window.location.href = "events.html";
                     }
                   </script>
-                  <a href="#" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
+                  <a href="https://calendar.google.com/" class="btn-calendar"><i class="bi bi-calendar-plus"></i> Add to Calendar</a>
                 </div>
               </div>
             </div>
@@ -1183,7 +1330,7 @@ If you’re interested in learning more, visit our Services..</p>
         </div>
 
         <div class="text-center mt-5">
-          <a href="#" class="btn-view-all">View All Events</a>
+          <a href="events.html" class="btn-view-all">View All Events</a>
         </div>
 
       </div>
@@ -1270,7 +1417,7 @@ If you’re interested in learning more, visit our Services..</p>
                   <i class="bi bi-linkedin"></i>
                   <span>LinkedIn</span>
                 </a>
-                <a href="#" aria-label="whatsapp" class="social-link">
+                <a href="https://chat.whatsapp.com/E4q1Sij0ZOcGZ6aZOPJjH8" aria-label="whatsapp" class="social-link">
                     <i class="bi bi-whatsapp"></i>
                     <span>whatsapp</span>
                 </a>
